@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
         <element label="New field 1" max_length="40" name="new_field_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element choice="1" label="Primary" max_length="32" name="u_reference_1" reference="x_58872_needit_primary" type="reference">
+            <choice>
+                <element label="Primary 1" sequence="0" value="Primary 1"/>
+                <element label="Primary 2" sequence="1" value="Primary 2"/>
+            </choice>
+        </element>
+        <element choice="1" dependent="u_reference_1" dependent_on_field="u_reference_1" label="Secondary" max_length="32" name="u_reference_2" reference_qual="javascript:&quot;secondary=&quot;+current.primary;" type="choice" use_dependent_field="true" use_reference_qualifier="advanced">
+            <choice>
+                <element dependent_value="Primary 2" label="Secondary 1b" value="Secondary 1b"/>
+                <element dependent_value="Primary 2" label="Secondary 2b" value="Secondary 2b"/>
+                <element dependent_value="Primary 1" label="Secondary 1a" sequence="0" value="Secondary 1a"/>
+                <element dependent_value="Primary 1" label="Secondary 1b" sequence="10" value="Secondary 1b"/>
+            </choice>
+        </element>
+        <element label="New Reference" max_length="32" name="u_reference_3" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element choice="1" dependent="u_reference_2" dependent_on_field="u_reference_2" label="Tertiary" max_length="32" name="u_reference_4" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="Secondary 1b" label="Tertiary 1b" value="Tertiary 1b"/>
+                <element dependent_value="Secondary 1a" label="Tertiary 3a" value="Tertiary 3a"/>
+                <element dependent_value="Secondary 1a" label="Tertiary 1a" sequence="0" value="Tertiary 1a"/>
+            </choice>
+        </element>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>

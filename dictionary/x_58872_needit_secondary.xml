@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Secondary" max_length="40" name="x_58872_needit_secondary" type="collection">
+        <element label="Primary" max_length="40" name="primary" reference="x_58872_needit_primary" type="reference"/>
+        <element display="true" label="Secondary" max_length="40" name="secondary" type="string"/>
+    </element>
+</database>

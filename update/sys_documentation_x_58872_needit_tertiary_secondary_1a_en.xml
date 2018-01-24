@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="secondary_1a" label="Secondary 1a" language="en" table="x_58872_needit_tertiary">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>secondary_1a</element>
+            <help/>
+            <hint/>
+            <label>Secondary 1a</label>
+            <language>en</language>
+            <name>x_58872_needit_tertiary</name>
+            <plural>Secondary 1as</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-18 20:25:31</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>dcc40c700f7303009733cf8ce1050e45</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Secondary 1a</sys_name>
+            <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+            <sys_update_name>sys_documentation_x_58872_needit_tertiary_secondary_1a_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-18 20:25:31</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

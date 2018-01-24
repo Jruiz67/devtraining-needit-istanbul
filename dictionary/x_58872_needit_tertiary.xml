@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Tertiary" max_length="40" name="x_58872_needit_tertiary" type="collection">
+        <element label="Secondary 1a" max_length="40" name="secondary_1a" type="string"/>
+        <element label="Secondary 1b" max_length="40" name="secondary_1b" type="string"/>
+        <element label="Secondary 2a" max_length="40" name="secondary_2a" type="string"/>
+        <element label="Secondary 2b" max_length="40" name="secondary_2b" type="string"/>
+    </element>
+</database>

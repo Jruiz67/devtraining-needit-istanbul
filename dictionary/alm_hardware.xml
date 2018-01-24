@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="alm_asset" label="Hardware" max_length="40" name="alm_hardware" type="collection">
+        <element label="SIM" max_length="40" name="x_58872_needit_sim" type="string"/>
+    </element>
+</database>
